@@ -31,6 +31,7 @@ class Pref {
 
       return List.from(jsonDecode(list ?? '[]'))
           .map((e) => Transaction.fromJson(e))
+          
           .toList();
     } catch (e) {
       log('$e');

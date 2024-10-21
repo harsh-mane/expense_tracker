@@ -23,6 +23,8 @@ class _HomeState extends State<Home> {
     final totalAmount = _transactions.fold(0.0, (prev, e) => prev + e.amount);
 
     return GestureDetector(
+
+      
       onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
         //app bar
@@ -47,7 +49,7 @@ class _HomeState extends State<Home> {
                 margin: const EdgeInsets.symmetric(vertical: 8),
                 elevation: 5,
                 child: Padding(
-                  padding: EdgeInsets.symmetric(
+                  padding: EdgeInsets.symmetric( 
                     horizontal: 10,
                     vertical: mq.height * .02,
                   ),
